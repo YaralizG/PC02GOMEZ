@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopcion de Mascotas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body style="background-color:#38B413;">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+
+                <form action="Confirmacion.cshtml" method="post">
+                    <h1>Solicitud de Adopción</h1>
+                    <div class="form-group">
+                        <label for="">Nombres:*</label>
+                        <input type="text" name="nombre" required="required" id="" class="form-control">
+                    </div>                    
+                    
+                                      
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Apellido Paterno:*</label>
+                            <input type="text" name="apellidopaterno" required="required" id="" class="form-control">
+                    </div>
+                        <div class="col">
+                            <label for="">Apellido Materno:*</label>
+                            <input type="text" name="apellidomaterno" required="required" id="" class="form-control">
+                        </div> 
+                    </div>
+
+
+                     <div class="form-group">
+                        <label for="">Tipo de mascota:</label>
+                        <select name="tipo" id="" class="form-control">
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Hamster">Hamster</option>
+                        </select>
+                    </div>                    
+                    <div class="form-group">
+                        <label for="">Descripción:*</label>
+                        <input type="text" name="descripcion" required="required" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Teléfono de contacto:*</label>
+                        <input type="tel" name="telefono" required="required" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Distrito:</label>
+                        <select name="Distrito" id="" class="form-control">
+                            <option value="a">Distrito A</option>
+                            <option value="b">Distrito B</option>
+                            <option value="c">Distrito C</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Dirección:*</label>
+                        <input type="text" name="direccion" required="required" id="" class="form-control">
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <button class="btn btn-primary">Realizar Solicitud</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col"></div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
